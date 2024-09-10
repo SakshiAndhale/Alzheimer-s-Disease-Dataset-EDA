@@ -17,7 +17,7 @@
   - [Depression History and Alzheimer’s Diagnosis](#depression-history-and-alzheimers-diagnosis)
   - [Memory Complaints by Education Level](#memory-complaints-by-education-level)
   - [Cholesterol Levels by Smoking Status](#cholesterol-levels-by-smoking-status)
-- [Conclusion and Business Insights](#conclusion-and-business-insights)
+- [Conclusion](#Conclusion)
 
 ## Project Overview
 This project aims to perform an Exploratory Data Analysis (EDA) on a dataset related to Alzheimer's Disease, with a focus on identifying key trends, correlations, and risk factors. By examining demographics, clinical conditions, and lifestyle habits, we seek to uncover insights that could inform early intervention and prevention strategies for Alzheimer's Disease.
@@ -122,6 +122,6 @@ The analysis of this dataset highlights several important aspects of Alzheimer�
 ---
 
 ## 🛠 **Technologies Used**
-- Python (Pandas, Matplotlib, Seaborn)
+- Python (Pandas, Numpy, Matplotlib, Seaborn)
 - Jupyter Notebook
 - Data visualization techniques
