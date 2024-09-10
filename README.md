@@ -1,88 +1,108 @@
-# Alzheimer's Disease Exploratory Data Analysis (EDA)
+# 🧠 Alzheimer's Disease Exploratory Data Analysis (EDA)
 
-This repository contains the exploratory data analysis (EDA) for a dataset related to Alzheimer's Disease. The goal of this analysis is to uncover patterns, relationships, and insights from various variables such as age, gender, blood pressure, lifestyle habits, and cognitive health markers that could influence the risk and progression of Alzheimer's Disease.
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Dataset Overview](#dataset-overview)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+  - [Age Distribution](#age-distribution)
+  - [Gender Distribution](#gender-distribution)
+  - [Ethnicity Distribution](#ethnicity-distribution)
+  - [Age by Education Level](#age-by-education-level)
+  - [BMI Distribution by Diabetes Status](#bmi-distribution-by-diabetes-status)
+  - [Systolic vs Diastolic Blood Pressure Correlation](#systolic-vs-diastolic-blood-pressure-correlation)
+  - [Alzheimer’s Disease Diagnosis](#alzheimers-disease-diagnosis)
+  - [Impact of Family History on Alzheimer’s Diagnosis](#impact-of-family-history-on-alzheimers-diagnosis)
+  - [Sleep Quality vs Physical Activity](#sleep-quality-vs-physical-activity)
+  - [Depression History and Alzheimer’s Diagnosis](#depression-history-and-alzheimers-diagnosis)
+  - [Memory Complaints by Education Level](#memory-complaints-by-education-level)
+  - [Cholesterol Levels by Smoking Status](#cholesterol-levels-by-smoking-status)
+- [Conclusion and Business Insights](#conclusion-and-business-insights)
 
-## 🧠 **Project Objective**
-To identify key trends, correlations, and risk factors for Alzheimer's Disease by analyzing a variety of factors including demographics, lifestyle, and clinical measurements.
+## Project Overview
+This project aims to perform an Exploratory Data Analysis (EDA) on a dataset related to Alzheimer's Disease, with a focus on identifying key trends, correlations, and risk factors. By examining demographics, clinical conditions, and lifestyle habits, we seek to uncover insights that could inform early intervention and prevention strategies for Alzheimer's Disease.
 
----
+## Dataset Overview
+The dataset includes various attributes such as:
+- **Age**: Age of the patients.
+- **Gender**: Male or Female.
+- **Ethnicity**: Ethnic background of patients.
+- **Education Level**: Highest level of education attained.
+- **BMI**: Body Mass Index.
+- **Blood Pressure**: Systolic and diastolic blood pressure readings.
+- **Lifestyle Factors**: Smoking, alcohol consumption, physical activity, and sleep quality.
+- **Family History**: Family history of Alzheimer’s.
+- **Clinical Conditions**: Presence of conditions like diabetes, cardiovascular disease, and depression.
+- **Cognitive Health Markers**: Memory complaints and Alzheimer's diagnosis status.
 
-## 📊 **Key Visualizations and Insights**
+## Data Cleaning and Preparation
+1. **Handling Missing Data**: Missing values were handled by either imputing or removing records, based on the proportion of missingness.
+2. **Outlier Detection**: Identified outliers for clinical variables (e.g., blood pressure) and dealt with them using appropriate statistical techniques.
+3. **Data Type Adjustments**: Ensured that each column had the appropriate data type, converting where necessary.
+4. **Feature Engineering**: Created new features like age categories and interaction variables to support deeper analysis.
 
-### 1. **Age Distribution**
-- **Data Presented:** Number of patients across different age ranges.
-- **Insight:** The majority of patients are aged between 70 and 84, peaking around 90. This age group is at the highest risk for Alzheimer’s Disease.
-- **Conclusion:** Early intervention should focus on individuals within the 70-90 age group.
+## Exploratory Data Analysis (EDA)
+The analysis aims to answer specific questions and extract meaningful insights from the dataset. Below are the key visualizations and findings:
 
-### 2. **Gender Distribution**
-- **Data Presented:** Proportion of male and female patients.
-- **Insight:** Females represent 50.6%, while males represent 49.4%.
-- **Conclusion:** The distribution is almost equal, suggesting that gender-specific Alzheimer’s interventions may not be necessary for this dataset.
+### Age Distribution
+- **Questions Answered**: What is the distribution of age among the patients?
+- **Insights**: The majority of patients are aged between 70 and 84, peaking around age 90, indicating a high-risk age group for Alzheimer’s.
+- **Conclusion**: Early interventions and screenings should focus on this high-risk age group.
 
-### 3. **Ethnicity Distribution**
-- **Data Presented:** Counts of different ethnic groups.
-- **Insight:** 59% of the dataset is Caucasian, with African Americans and Asians making up smaller portions.
-- **Conclusion:** Outreach and care programs should be tailored to ensure inclusivity across different ethnicities.
+### Gender Distribution
+- **Questions Answered**: How are patients distributed by gender?
+- **Insights**: The dataset shows almost equal representation between males (49.4%) and females (50.6%).
+- **Conclusion**: Gender-specific Alzheimer’s interventions may not be necessary based on this dataset.
 
-### 4. **Age by Education Level**
-- **Data Presented:** Age distribution by education levels (None, Primary, Secondary, Higher).
-- **Insight:** Higher education is associated with older ages and a wider age range.
-- **Conclusion:** Higher education may play a role in delaying cognitive decline, possibly providing cognitive reserve.
+### Ethnicity Distribution
+- **Questions Answered**: How does ethnicity factor into Alzheimer’s risk?
+- **Insights**: A majority (59%) of patients are Caucasian, followed by smaller percentages of African American and Asian patients.
+- **Conclusion**: Outreach should ensure inclusivity across different ethnic groups to address any disparities in care.
 
-### 5. **BMI Distribution by Diabetes Status**
-- **Data Presented:** BMI distribution for patients with and without diabetes.
-- **Insight:** Diabetic patients tend to have higher BMI, clustered between 25 and 40.
-- **Conclusion:** Weight management programs are crucial for diabetes control, which is linked to Alzheimer’s risk.
+### Age by Education Level
+- **Questions Answered**: How does education level vary across age groups?
+- **Insights**: Patients with higher education levels tend to be older, suggesting a possible link between education and longevity.
+- **Conclusion**: Higher education may offer cognitive resilience, potentially delaying the onset of Alzheimer's symptoms.
 
-### 6. **Systolic vs Diastolic Blood Pressure Correlation**
-- **Data Presented:** Correlation between systolic and diastolic blood pressure.
-- **Insight:** Weak correlation, suggesting no strong linear relationship.
-- **Conclusion:** Blood pressure management remains important, but additional cardiovascular factors need to be analyzed.
+### BMI Distribution by Diabetes Status
+- **Questions Answered**: What is the BMI distribution among diabetic and non-diabetic patients?
+- **Insights**: Diabetic patients generally have higher BMIs, clustering between 25 and 40.
+- **Conclusion**: Addressing obesity through lifestyle changes is important, especially for diabetic patients who are at higher risk for Alzheimer’s.
 
-### 7. **Alzheimer’s Disease Diagnosis**
-- **Data Presented:** Number of diagnosed vs non-diagnosed patients.
-- **Insight:** 35.4% of patients are diagnosed with Alzheimer’s.
-- **Conclusion:** A significant portion of patients remain undiagnosed, highlighting the need for better awareness and screening programs.
+### Systolic vs Diastolic Blood Pressure Correlation
+- **Questions Answered**: How do systolic and diastolic blood pressures correlate?
+- **Insights**: A weak correlation suggests that these blood pressure measurements do not vary linearly.
+- **Conclusion**: While blood pressure management is important, additional cardiovascular markers may be needed for Alzheimer’s risk prediction.
 
-### 8. **Age Distribution by Alzheimer’s Diagnosis**
-- **Data Presented:** Age distribution among diagnosed and non-diagnosed patients.
-- **Insight:** Alzheimer’s diagnosis peaks around age 80.
-- **Conclusion:** The risk of Alzheimer’s increases with age. Early screening is critical for individuals over 70.
+### Alzheimer’s Disease Diagnosis
+- **Questions Answered**: What proportion of the patients are diagnosed with Alzheimer’s?
+- **Insights**: Around 35.4% of the dataset has an Alzheimer’s diagnosis.
+- **Conclusion**: There is a need for increased awareness and diagnostic efforts to identify those at risk earlier.
 
-### 9. **Cholesterol Levels by Smoking Status**
-- **Data Presented:** Cholesterol levels among smokers and non-smokers.
-- **Insight:** Smokers have slightly higher cholesterol levels with more variability.
-- **Conclusion:** Smoking cessation can reduce cardiovascular risk factors related to Alzheimer’s.
+### Impact of Family History on Alzheimer’s Diagnosis
+- **Questions Answered**: How does family history influence Alzheimer’s diagnosis?
+- **Insights**: 33.9% of patients with a family history of Alzheimer’s are diagnosed, compared to 17.8% without.
+- **Conclusion**: Family history is a significant risk factor, emphasizing the need for genetic counseling and early screenings.
 
-### 10. **Memory Complaints by Education Level**
-- **Data Presented:** Proportion of memory complaints across education levels.
-- **Insight:** Lower education levels report more memory complaints.
-- **Conclusion:** Targeted cognitive health interventions are needed for individuals with lower education levels.
+### Sleep Quality vs Physical Activity
+- **Questions Answered**: How does physical activity impact sleep quality?
+- **Insights**: Higher physical activity levels are associated with better sleep quality.
+- **Conclusion**: Promoting physical activity could improve sleep quality and overall cognitive health.
 
-### 11. **Alcohol Consumption by Cardiovascular Disease Status**
-- **Data Presented:** Alcohol consumption in patients with and without cardiovascular disease.
-- **Insight:** No significant variation in alcohol consumption between groups.
-- **Conclusion:** Further analysis is needed to explore alcohol’s impact on cardiovascular health and Alzheimer’s risk.
+### Depression History and Alzheimer’s Diagnosis
+- **Questions Answered**: How does a history of depression relate to Alzheimer’s diagnosis?
+- **Insights**: 70% of patients with a history of depression are diagnosed with Alzheimer’s.
+- **Conclusion**: Mental health management is crucial in reducing Alzheimer’s risk, especially for those with depression.
 
-### 12. **Impact of Family History on Alzheimer’s Diagnosis**
-- **Data Presented:** Proportion of Alzheimer’s patients with/without a family history.
-- **Insight:** Family history is a strong predictor of Alzheimer’s, with 33.9% of patients with family history diagnosed, compared to 17.8% without.
-- **Conclusion:** Genetic counseling and early screening are essential for individuals with a family history of Alzheimer’s.
+### Memory Complaints by Education Level
+- **Questions Answered**: How do memory complaints vary by education level?
+- **Insights**: Individuals with lower education levels report more memory complaints.
+- **Conclusion**: Cognitive interventions should target individuals with lower education levels.
 
-### 13. **Sleep Quality vs Physical Activity**
-- **Data Presented:** Relationship between sleep quality and physical activity levels.
-- **Insight:** Higher physical activity is associated with better sleep quality.
-- **Conclusion:** Encouraging physical activity can improve sleep and potentially reduce Alzheimer’s risk.
-
-### 14. **Depression History and Alzheimer’s Diagnosis**
-- **Data Presented:** Proportion of Alzheimer's diagnosis among patients with/without a history of depression.
-- **Insight:** 70% of patients with depression are diagnosed with Alzheimer’s.
-- **Conclusion:** Mental health management is crucial in reducing Alzheimer's risk, especially for those with a history of depression.
-
-### 15. **BMI Distribution by Behavioral Problems**
-- **Data Presented:** Relationship between BMI and behavioral problems.
-- **Insight:** Higher BMI is associated with increased behavioral issues.
-- **Conclusion:** Weight management can play a role in managing behavioral problems in Alzheimer’s patients.
+### Cholesterol Levels by Smoking Status
+- **Questions Answered**: What is the relationship between smoking and cholesterol levels?
+- **Insights**: Smokers tend to have higher and more variable cholesterol levels.
+- **Conclusion**: Smoking cessation should be a key focus to reduce cardiovascular and cognitive risks.
 
 ---
 
