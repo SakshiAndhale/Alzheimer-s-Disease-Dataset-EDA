@@ -17,7 +17,7 @@
   - [Depression History and Alzheimer’s Diagnosis](#depression-history-and-alzheimers-diagnosis)
   - [Memory Complaints by Education Level](#memory-complaints-by-education-level)
   - [Cholesterol Levels by Smoking Status](#cholesterol-levels-by-smoking-status)
-- [Conclusion](#Conclusion)
+- [Conclusion](#conclusion)
 
 ## Project Overview
 This project aims to perform an Exploratory Data Analysis (EDA) on a dataset related to Alzheimer's Disease, with a focus on identifying key trends, correlations, and risk factors. By examining demographics, clinical conditions, and lifestyle habits, we seek to uncover insights that could inform early intervention and prevention strategies for Alzheimer's Disease.
